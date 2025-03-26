@@ -1,0 +1,36 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: echo-pod-ip-cronjob
+  namespace: p-farrukh
+spec:
+  schedule: "* * * * *"
+  jobTemplate:
+    spec:
+      completions: 10
+      parallelism: 2
+      backoffLimit: 2
+      template:
+        spec:
+          affinity:
+            nodeAffinity:
+              requiredDuringSchedulingIgnoredDuringExecution:
+                nodeSelectorTerms:
+                - matchExpressions:
+                  - key: cron
+                    operator: In
+                    values:
+                    - job
+          containers:
+          - name: busybox
+            image: busybox
+            command:
+            - "/bin/sh"
+            - "-c"
+            - "echo POD_IP: $POD_IP"
+            env:
+            - name: POD_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP
+          restartPolicy: Never

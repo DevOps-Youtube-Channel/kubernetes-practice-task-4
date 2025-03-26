@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: practice
+  namespace: p-farrukh
+data:
+  http_port: "80"
+  message: "hello world"

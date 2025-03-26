@@ -1,0 +1,10 @@
+$ kubectl auth can-i list pods -n p-farrukh
+yes
+$ kubectl auth can-i list cronjobs -n p-farrukh
+yes
+$ kubectl auth can-i list jobs -n p-farrukh
+yes
+$ kubectl auth can-i list nodes
+Warning: resource 'nodes' is not namespace scoped
+
+yes

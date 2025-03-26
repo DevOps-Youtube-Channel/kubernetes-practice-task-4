@@ -1,0 +1,12 @@
+NAME              STATUS   AGE
+default           Active   37d
+ingress-nginx     Active   30d
+kube-node-lease   Active   37d
+kube-public       Active   37d
+kube-system       Active   37d
+p-farrukh         Active   25s
+p-fayoz           Active   112m
+p-ibrohim         Active   68m
+p-osmon           Active   62m
+p-rshokirov       Active   113m
+special           Active   33d

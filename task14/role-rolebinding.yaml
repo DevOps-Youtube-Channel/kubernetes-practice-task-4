@@ -1,0 +1,26 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: namespace-reader
+  namespace: p-farrukh
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["list", "get"]
+- apiGroups: ["batch"]
+  resources: ["cronjobs", "jobs"]
+  verbs: ["list", "get"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: namespace-reader-binding
+  namespace: p-farrukh
+subjects:
+- kind: ServiceAccount
+  name: my-sa
+  namespace: p-farrukh
+roleRef:
+  kind: Role
+  name: namespace-reader
+  apiGroup: rbac.authorization.k8s.io

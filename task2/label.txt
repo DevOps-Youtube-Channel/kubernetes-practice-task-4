@@ -1,0 +1,7 @@
+NAME           STATUS   ROLES    AGE   VERSION   LABELS
+master-node1   Ready    <none>   17d   v1.32.0   beta.kubernetes.io/arch=arm64,beta.kubernetes.io/os=linux,kubernetes.io/arch=arm64,kubernetes.io/hostname=master-node1,kubernetes.io/os=linux
+node1          Ready    <none>   17d   v1.32.0   beta.kubernetes.io/arch=arm64,beta.kubernetes.io/os=linux,devops=true,kubernetes.io/arch=arm64,kubernetes.io/hostname=node1,kubernetes.io/os=linux,redis=true
+node2          Ready    <none>   17d   v1.32.0   beta.kubernetes.io/arch=arm64,beta.kubernetes.io/os=linux,kubernetes.io/arch=arm64,kubernetes.io/hostname=node2,kubernetes.io/os=linux
+node3          Ready    <none>   17d   v1.32.0   beta.kubernetes.io/arch=arm64,beta.kubernetes.io/os=linux,kubernetes.io/arch=arm64,kubernetes.io/hostname=node3,kubernetes.io/os=linux
+node4          Ready    <none>   17d   v1.32.0   beta.kubernetes.io/arch=arm64,beta.kubernetes.io/os=linux,kubernetes.io/arch=arm64,kubernetes.io/hostname=node4,kubernetes.io/os=linux,redis=true
+node5          Ready    <none>   17d   v1.32.0   beta.kubernetes.io/arch=arm64,beta.kubernetes.io/os=linux,kubernetes.io/arch=arm64,kubernetes.io/hostname=node5,kubernetes.io/os=linux,redis=true

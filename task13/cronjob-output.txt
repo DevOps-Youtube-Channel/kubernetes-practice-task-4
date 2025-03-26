@@ -1,0 +1,26 @@
+NAME                                   READY   STATUS              RESTARTS        AGE
+busybox-echo                           0/1     Completed           0               179m
+echo-pod-ip-cronjob-29050307-7dghp     0/1     Completed           0               55s
+echo-pod-ip-cronjob-29050307-9s8pk     0/1     Completed           0               59s
+echo-pod-ip-cronjob-29050307-hbvr4     0/1     Completed           0               67s
+echo-pod-ip-cronjob-29050307-hzwv7     0/1     Completed           0               64s
+echo-pod-ip-cronjob-29050307-k6bzk     0/1     Completed           0               51s
+echo-pod-ip-cronjob-29050307-k6mcw     0/1     Completed           0               63s
+echo-pod-ip-cronjob-29050307-mnxsz     0/1     Completed           0               60s
+echo-pod-ip-cronjob-29050307-rsqqk     0/1     Completed           0               67s
+echo-pod-ip-cronjob-29050307-vjjsp     0/1     Completed           0               50s
+echo-pod-ip-cronjob-29050307-z55lp     0/1     Completed           0               54s
+echo-pod-ip-cronjob-29050308-6zrpj     0/1     Completed           0               7s
+echo-pod-ip-cronjob-29050308-7zrnb     0/1     ContainerCreating   0               2s
+echo-pod-ip-cronjob-29050308-qrh7n     0/1     Completed           0               7s
+echo-pod-ip-cronjob-29050308-wrjrv     0/1     Completed           0               3s
+flask-application-2-67588f77cd-cjz82   1/1     Running             0               152m
+flask-application-7f7c985d-nc6qs       0/1     CrashLoopBackOff    35 (5m3s ago)   159m
+nginx-daemonset-2f7hc                  1/1     Running             0               27m
+nginx-daemonset-5hpvl                  1/1     Running             0               27m
+nginx-daemonset-8ssfk                  1/1     Running             0               27m
+nginx-daemonset-sgl7j                  1/1     Running             0               27m
+nginx-daemonset-xj7qq                  1/1     Running             0               27m
+redis-pod-1                            1/1     Running             0               3h9m
+redis-pod-2                            1/1     Running             0               3h9m
+something-app-65fcdd57-hwvns           1/1     Running             0               111m
